@@ -1,0 +1,36 @@
+/*
+  ======================================================= Lien vers le site
+*/
+
+.annuaire_url {
+  display:inline-block;
+  font-size: .8em;
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+  border: solid 1px #000;
+}
+
+/*
+  ======================================================= liste de thématiques
+*/
+
+.thematique_list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.thematique_link {
+  display:block;
+  text-align: center;
+  font-size: .6em;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #fff;
+  margin-block: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: solid 1px #000;
+}

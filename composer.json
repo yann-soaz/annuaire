@@ -1,0 +1,20 @@
+{
+    "name": "yann-soaz/annuaire",
+    "type": "project",
+    "require": {
+        "yann-soaz/ys_cpt": "dev-master",
+        "htmlburger/carbon-fields": "dev-development"
+    },
+    "autoload": {
+        "psr-4": {
+            "YannSoaz\\Annuaire\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yann-soaz",
+            "email": "jfbillot@yann-soaz.fr"
+        }
+    ],
+    "minimum-stability": "dev"
+}

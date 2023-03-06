@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "yann-soaz/thematiques",
+  "version": "0.1.0",
+  "title": "Thematiques",
+  "category": "ys_annuaire",
+  "icon": "tag",
+  "description": "Affiche les thématiques liées à une fiche de site.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "thematiques",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
