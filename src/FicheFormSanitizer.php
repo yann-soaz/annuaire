@@ -128,7 +128,7 @@ class FicheFormSanitizer {
       $this->setError('site_url', 'L\'url fournie ne semble pas valide !');
       return false;
     }
-    if (!checkdnsrr($url)) {
+    if (!checkdnsrr(str_replace(['http://', 'https://'], '', $url))) {
       $this->setError('site_url', 'Le site internet ne semble pas accessible !');
       return false;
     }
@@ -147,7 +147,7 @@ class FicheFormSanitizer {
 
     $text = str_replace("\n", $paraph_end.$paraph_start, $text);
 
-    return $paraph_start.$text.$paraph_end;
+    return AnnuaireTools::buildTemplate($paraph_start.$text.$paraph_end);
   }
 
   protected function not_empty (string $field_name): bool {
