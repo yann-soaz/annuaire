@@ -92,7 +92,7 @@ class FicheForm {
             <?php
               foreach ($this->themes() as $id => $name) {
                 ?>
-                  <option value="<?= $id ?>" <?php if($this->old('site_category') === $id) { echo 'selected'; } ?> ><?= $name ?></option>
+                  <option value="<?= $id ?>" <?php if($this->old('site_category') == $id) { echo 'selected'; } ?> ><?= $name ?></option>
                 <?php
               }
             ?>
@@ -101,7 +101,7 @@ class FicheForm {
         </div>
         <div class="ys_form_field ys_desc_field">
           <label for="site_description">Description du site</label>
-          <textarea name="site_description" id="site_description"></textarea>
+          <textarea name="site_description" id="site_description"><?= $this->old('site_description') ?></textarea>
           <?= $this->error('site_description') ?>
         </div>
 

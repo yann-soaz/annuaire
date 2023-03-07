@@ -55,7 +55,7 @@ class FicheFormSanitizer {
             $_POST[$input_name] = strip_tags($_POST[$input_name]);
           break;
           case 'site_description' :
-            $_POST[$input_name] = $this->build_content(strip_tags($_POST[$input_name]));
+            $_POST[$input_name] = strip_tags($_POST[$input_name]);
           break;
           case 'site_url' :
             $this->is_good_url($_POST[$input_name]);
@@ -73,7 +73,7 @@ class FicheFormSanitizer {
   public function get_builded_args () {
     return array(
       'post_title'   => $this->post['site_name'],
-      'post_content' => $this->post['site_description'],
+      'post_content' => $this->build_content($this->post['site_description']),
       'post_status'  => 'draft',
       'post_author'  => 1,
       'post_type'	   => 'fiche',

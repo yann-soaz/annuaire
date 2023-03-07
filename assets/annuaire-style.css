@@ -34,3 +34,30 @@
   text-decoration: none;
   border: solid 1px #000;
 }
+
+/*
+  ======================================================= erreurs du formulaire front-end
+*/
+
+.ys_form_message {
+  padding: 10px;
+  color: #fff;
+  margin-block: 10px;
+}
+  .ys_form_message.ys_error {
+    background-color: rgb(180, 60, 60);
+  }
+  .ys_form_message.ys_success {
+    background-color: rgb(61, 119, 61);
+  }
+
+
+.field_error {
+  color: rgb(180, 60, 60);
+  font-size: .8em;
+  padding-inline-start: 5px;
+  border-inline-start: solid 1px rgb(180, 60, 60);
+}
+  .field_error span {
+    display: block;
+  }
