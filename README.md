@@ -15,11 +15,9 @@ Installer le plugin mettra à disposition le type de contenu "fiche" et la taxon
 Plusieurs blocks Gutenberg sont disponibles dans la catégorie "annuaire" :
 
 - "url du site"
-
 - affiche un champs d'url et un bouton "screenshot", une fois l'url remplie, cliquer sur le bouton génèrera un screenshot du site et l'enregistrera comme image mise en avant dans le contenu.
-
 - "thématiques" affichera tous les termes de taxonomie "thematique" lié au contenu en cours d'édition
-
+- "Formulaire de proposition" affichera un formulaire permettant aux visiteurs d'enregistrer des fiches de site au format "brouillon", le screen-capture devra être fait manuellement dans le contenu afin de ne pas sur-utiliser les crédits de l'api screenshotmachine.
   
 
 ## personnalisation
@@ -85,6 +83,6 @@ dans un dossier "annuaire" dans votre thème vous pouvez créer le fichier "annu
 #### redirection après validation du formulaire
 
 pour la redirection après validation du formulaire en front-end, le plugin utilise une constante 'ANNUAIRE_FORM_REDIRECT', qui peut être définie dans votre thème.
-par défaut elle est sur "false" mais peut contenir l'url de la page vers laquelle l'utilisateur doit être redirigé.
+par défaut elle est sur "false" mais peut contenir l'url de la page vers laquelle l'utilisateur doit être redirigé. cette url sera utilisé par la fonction [wp_safe_redirect](https://developer.wordpress.org/reference/functions/wp_safe_redirect/)
 
     define('ANNUAIRE_FORM_REDIRECT', '/remerciement');
