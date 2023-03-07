@@ -5,6 +5,7 @@ use YannSoaz\Annuaire\AnnuaireTools;
 $blocks = [
   'ys-annuaire/site-url' => 'site_url',
   'ys-annuaire/thematiques' => 'thematiques',
+  'ys-annuaire/site-form' => 'site_form',
 ];
 
 foreach ($blocks as $block => $path) {

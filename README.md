@@ -72,6 +72,7 @@ L'affichage dans le cas ou aucune thematique n'a été trouvée pour le contenu 
     }
 
 #### personnaliser le style
+
 dans un dossier "annuaire" dans votre thème vous pouvez créer le fichier "annuaire-style.css" dans lequel insérer votre style pour les différent blocks. Ce style sera inclue dans le front-end et l'éditeur Gutenberg.
 
 #### personnaliser le template de base du contenu "fiche"
@@ -80,3 +81,10 @@ dans un dossier "annuaire" dans votre thème vous pouvez créer le fichier "annu
 - une fois la mise en page finalisé : cliquez sur le menu en haut a droite de l'éditeur (trois points verticaux) puis sélectionnez "copier tout les blocks".
 - dans le dossier "annuaire" de votre thème vous pouvez créer le fichier "content-fiche.html" et coller le contenu copié dans l'éditeur.
 - inclure le code "{{site_description}}" à l'endroit du template ou sera rédiger le contenu (pour le formulaire front-end)
+
+#### redirection après validation du formulaire
+
+pour la redirection après validation du formulaire en front-end, le plugin utilise une constante 'ANNUAIRE_FORM_REDIRECT', qui peut être définie dans votre thème.
+par défaut elle est sur "false" mais peut contenir l'url de la page vers laquelle l'utilisateur doit être redirigé.
+
+    define('ANNUAIRE_FORM_REDIRECT', '/remerciement');

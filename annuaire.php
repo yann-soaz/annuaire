@@ -23,6 +23,10 @@ Text Domain: ys_annuaire
 require 'vendor/autoload.php';
 define('ANNUAIRE_PATH', __DIR__);
 define('ANNUAIRE_PUBLIC_PATH', plugins_url('', __FILE__));
+
+if (!defined('ANNUAIRE_FORM_REDIRECT')) {
+  define('ANNUAIRE_FORM_REDIRECT', false);
+}
 require 'src/AnnuaireBlocks.php';
 
 $manager = YS_PostTypeManager::get();
