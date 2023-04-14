@@ -86,7 +86,7 @@ class FicheForm {
           <?= $this->error('site_url') ?>
         </div>
         <div class="ys_form_field ys_cat_field">
-          <label for="site_category">URL du site</label>
+          <label for="site_category">Thématique</label>
           <select name="site_category" id="site_category" required>
             <option value="">Selectionnez une thématique</option>
             <?php
